@@ -22,7 +22,7 @@ def solution(A, F, M):
     # write your code in Python 3.6
     SUM_required = (M*(len(A) + F)) - sum(A)
     DICE = DICE = [1, 2, 3, 4, 5, 6]
-    if SUM_required > 6*len(A):
+    if SUM_required > 6*F:  #in test, I used len(A) instead of F XD
         return [0]
     
     else:
